@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark-main: #070406;
+  --color-dark-header: #050204;
+  --color-dark-card: #12080d;
+  --color-dark-card-hover: #1f0d16;
+
+  --color-brand-primary: #e50914;
+  --color-brand-primary-hover: #ff2a4b;
+  --color-brand-cyan: #ff2a4b;
+  --color-brand-cyan-glow: rgba(255, 42, 75, 0.4);
+  --color-brand-accent: #ff5e3a;
+  --color-brand-banner: #230811;
+
+  --color-brand-green: #00c950;
+  --color-brand-green-hover: #00e05a;
+  --color-brand-green-check: #00e05a;
+
+  --color-text-muted: #ad8a95;
+  --color-text-light: #f0d5dd;
+  --color-border-muted: #2c101c;
+  --color-border-hover: #ff2a4b;
+
+  --font-heading: 'Outfit', 'Montserrat', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  --tracking-wide-logo: 5px;
+  --tracking-wide-panel: 10px;
+}
+
+body {
+  background-color: #070406;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 22s linear infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #070406;
+}
+::-webkit-scrollbar-thumb {
+  background: #2c101c;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff2a4b;
+}

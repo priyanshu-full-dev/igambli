@@ -1,0 +1,687 @@
+/* ==========================================================================
+   APP STYLES - KUBERBOOK PANEL (PIXEL PERFECT LAYOUT)
+   ========================================================================== */
+
+.app-wrapper {
+  min-height: 100vh;
+  background-color: #060102;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* --------------------------------------------------------------------------
+   HEADER
+   -------------------------------------------------------------------------- */
+.site-header {
+  position: relative;
+  z-index: 50;
+  background-color: #050102;
+  border-bottom: 1px solid #180306;
+  padding: 14px 0;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.header-whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #e50014;
+  color: #ffffff;
+  padding: 9px 20px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  box-shadow: 0 3px 12px rgba(229, 0, 20, 0.35);
+  transition: all 0.2s ease;
+}
+
+.header-whatsapp-btn:hover {
+  background-color: #ff1a2e;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 18px rgba(229, 0, 20, 0.55);
+}
+
+.whatsapp-icon {
+  flex-shrink: 0;
+}
+
+/* --------------------------------------------------------------------------
+   HERO SECTION
+   -------------------------------------------------------------------------- */
+.hero-section {
+  position: relative;
+  background-color: #060102;
+  overflow: hidden;
+  min-height: 640px;
+  display: flex;
+  align-items: stretch;
+}
+
+.hero-bg-glow {
+  position: absolute;
+  top: 10%;
+  right: 12%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(175, 12, 28, 0.4) 0%, rgba(95, 6, 15, 0.2) 50%, transparent 75%);
+  filter: blur(60px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-inner-container {
+  max-width: 1340px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 24px 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content {
+  max-width: 580px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  z-index: 3;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 16px;
+  background: rgba(28, 4, 8, 0.85);
+  border: 1px solid #5a1119;
+  border-radius: 9999px;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  margin-bottom: 22px;
+}
+
+.hero-titles {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.hero-title-brand {
+  font-family: var(--font-heading);
+  font-size: 68px;
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: 0.5px;
+}
+
+.kuber-text {
+  color: #ffffff;
+}
+
+.book-text {
+  color: #ff1a20;
+}
+
+.panel-text {
+  font-family: var(--font-heading);
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: 10px;
+  color: #ffffff;
+  margin-top: 4px;
+  margin-bottom: 14px;
+}
+
+.hero-title-headline {
+  font-family: var(--font-heading);
+  font-size: 32px;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.18;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.hero-description {
+  color: #b5a5a8;
+  font-size: 13.5px;
+  line-height: 1.55;
+  max-width: 480px;
+  margin-bottom: 28px;
+}
+
+.hero-features-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.feature-mini-card {
+  background: #110305;
+  border: 1px solid #28080d;
+  border-radius: 8px;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  transition: all 0.25s ease;
+}
+
+.feature-mini-card:hover {
+  border-color: #55101a;
+  background: #180407;
+  transform: translateY(-2px);
+}
+
+.feature-mini-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-mini-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.feature-mini-desc {
+  font-size: 11px;
+  color: #8c7b7f;
+  margin-top: 2px;
+  line-height: 1.25;
+}
+
+.hero-cta-wrap {
+  display: flex;
+}
+
+.btn-get-started {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #df0d15;
+  color: #ffffff;
+  padding: 13px 32px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  box-shadow: 0 4px 18px rgba(223, 13, 21, 0.45);
+  transition: all 0.25s ease;
+}
+
+.btn-get-started:hover {
+  background-color: #ff1c25;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(255, 31, 36, 0.6);
+}
+
+/* Hero Right Athlete Showcase */
+.hero-athlete-showcase {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 96%;
+  max-height: 640px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.hero-athlete-img {
+  height: 100%;
+  width: auto;
+  max-height: 640px;
+  object-fit: contain;
+  object-position: bottom right;
+  display: block;
+}
+
+/* --------------------------------------------------------------------------
+   AVAILABLE ALL B2C SITES SECTION
+   -------------------------------------------------------------------------- */
+.b2c-section {
+  padding: 50px 0 60px 0;
+  background-color: #060102;
+  position: relative;
+  z-index: 10;
+}
+
+.section-title-wrap {
+  margin-bottom: 24px;
+}
+
+.section-heading {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 0.3px;
+  display: inline-block;
+}
+
+.heading-underline {
+  width: 140px;
+  height: 2.5px;
+  background-color: #df0d15;
+  margin-top: 6px;
+  border-radius: 2px;
+}
+
+.b2c-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.b2c-card {
+  background: #110305;
+  border: 1px solid #24060b;
+  border-radius: 6px;
+  padding: 12px 24px;
+  display: grid;
+  grid-template-columns: 200px 1fr auto;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.25s ease;
+}
+
+.b2c-card:hover {
+  background: #190408;
+  border-color: #4a0d17;
+  transform: translateX(3px);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4);
+}
+
+.b2c-card-brand {
+  display: flex;
+  align-items: center;
+}
+
+.b2c-card-domain {
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 600;
+  color: #e5d8da;
+  letter-spacing: 0.3px;
+}
+
+.b2c-card-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn-visit-site {
+  background-color: #008f17;
+  color: #ffffff;
+  padding: 8px 22px;
+  border-radius: 5px;
+  font-size: 13.5px;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(0, 143, 23, 0.3);
+  transition: all 0.2s ease;
+}
+
+.btn-visit-site:hover {
+  background-color: #00aa1c;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 170, 28, 0.45);
+}
+
+.btn-whatsapp-site {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background-color: #008f17;
+  color: #ffffff;
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-size: 13.5px;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(0, 143, 23, 0.3);
+  transition: all 0.2s ease;
+}
+
+.btn-whatsapp-site:hover {
+  background-color: #00aa1c;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 170, 28, 0.45);
+}
+
+/* --------------------------------------------------------------------------
+   FEATURE HIGHLIGHTS (6 CARDS)
+   -------------------------------------------------------------------------- */
+.features-section {
+  padding: 20px 0 50px 0;
+  background-color: #060102;
+  position: relative;
+  z-index: 10;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+}
+
+.feature-card {
+  background: #110305;
+  border: 1px solid #24060b;
+  border-radius: 10px;
+  padding: 24px 14px 20px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.25s ease;
+}
+
+.feature-card:hover {
+  background: #1a0408;
+  border-color: #550f1a;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.feature-icon-box {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.feature-card-title {
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 6px;
+  line-height: 1.2;
+}
+
+.feature-card-subtitle {
+  font-size: 11.5px;
+  color: #948286;
+  line-height: 1.35;
+}
+
+/* --------------------------------------------------------------------------
+   BENEFITS & CHECKLIST (3 COLUMNS)
+   -------------------------------------------------------------------------- */
+.benefits-section {
+  padding: 10px 0 40px 0;
+  background-color: #060102;
+  position: relative;
+  z-index: 10;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.benefit-card {
+  background: #110305;
+  border: 1px solid #24060b;
+  border-radius: 10px;
+  padding: 32px 28px;
+  transition: all 0.25s ease;
+}
+
+.benefit-card:hover {
+  background: #180407;
+  border-color: #4a0d17;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.5);
+}
+
+.benefit-card-title {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  color: #ffffff;
+  margin-bottom: 22px;
+}
+
+.benefit-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.check-icon-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #00a81c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.benefit-item-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #d5c8cb;
+}
+
+/* --------------------------------------------------------------------------
+   SOCIAL LINKS
+   -------------------------------------------------------------------------- */
+.social-links-section {
+  padding: 15px 0 35px 0;
+  background-color: #060102;
+  position: relative;
+  z-index: 10;
+}
+
+.social-links-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+.social-circle-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #120306;
+  border: 1px solid #2a070e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  transition: all 0.25s ease;
+}
+
+.social-circle-btn:hover {
+  background: #df0d15;
+  border-color: #ff1f24;
+  color: #ffffff;
+  transform: translateY(-2px) scale(1.06);
+  box-shadow: 0 4px 16px rgba(223, 13, 21, 0.45);
+}
+
+/* --------------------------------------------------------------------------
+   BOTTOM CTA BANNER
+   -------------------------------------------------------------------------- */
+.cta-banner-wrapper {
+  background: linear-gradient(90deg, #38050b 0%, #4a070f 50%, #38050b 100%);
+  border-top: 1px solid #5a0d16;
+  padding: 24px 0;
+  margin-top: auto;
+  position: relative;
+  z-index: 20;
+}
+
+.cta-banner-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.cta-banner-title {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.cta-banner-subtitle {
+  font-size: 13.5px;
+  color: #d8c8cb;
+}
+
+.btn-join-now {
+  background-color: #df0d15;
+  color: #ffffff;
+  padding: 13px 26px;
+  border-radius: 4px;
+  font-family: var(--font-heading);
+  font-size: 14.5px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  box-shadow: 0 4px 16px rgba(223, 13, 21, 0.4);
+  transition: all 0.2s ease;
+}
+
+.btn-join-now:hover {
+  background-color: #ff1f24;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 31, 36, 0.55);
+}
+
+/* --------------------------------------------------------------------------
+   RESPONSIVE DESIGN BREAKPOINTS
+   -------------------------------------------------------------------------- */
+@media (max-width: 1200px) {
+  .hero-athlete-showcase {
+    max-height: 560px;
+  }
+  .hero-title-brand {
+    font-size: 58px;
+  }
+  .features-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-section {
+    min-height: auto;
+    padding-bottom: 30px;
+  }
+  .hero-inner-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-content {
+    max-width: 100%;
+    padding-bottom: 20px;
+  }
+  .hero-badge {
+    margin: 0 auto 20px auto;
+  }
+  .hero-description {
+    margin: 0 auto 24px auto;
+  }
+  .hero-features-row {
+    max-width: 500px;
+    margin: 0 auto 26px auto;
+  }
+  .hero-cta-wrap {
+    justify-content: center;
+  }
+  .hero-athlete-showcase {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    height: 440px;
+    margin-top: 20px;
+    justify-content: center;
+  }
+  .b2c-card {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    gap: 14px;
+  }
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+  .cta-banner-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-title-brand {
+    font-size: 44px;
+  }
+  .hero-title-headline {
+    font-size: 24px;
+  }
+  .hero-features-row {
+    flex-direction: column;
+  }
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .b2c-card-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  .btn-visit-site, .btn-whatsapp-site {
+    width: 100%;
+    justify-content: center;
+  }
+}
