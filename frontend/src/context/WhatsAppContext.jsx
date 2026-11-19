@@ -3,7 +3,7 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 const WhatsAppContext = createContext(null);
 
 export const DEFAULT_WHATSAPP_NUMBER = '7366064847';
-export const API_BASE = import.meta.env.VITE_API_URL || '';
+export const API_BASE = import.meta.env.VITE_API_URL || 'https://igambli-3b8n.vercel.app';
 
 export function WhatsAppProvider({ children }) {
   const [whatsappNumber, setWhatsappNumber] = useState(DEFAULT_WHATSAPP_NUMBER);

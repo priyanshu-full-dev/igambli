@@ -102,7 +102,7 @@ export default function NumberAdmin() {
         setLoginError(data.message || 'Invalid ID or Password. Access Denied.');
       }
     } catch (err) {
-      setLoginError('Backend connection error. Please make sure the backend server is running on port 5001.');
+      setLoginError('Backend connection error. Please check your connection or backend server.');
     } finally {
       setLoginLoading(false);
     }
