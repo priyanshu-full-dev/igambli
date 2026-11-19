@@ -3,6 +3,9 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
+    "start": "npm --prefix backend run start",
+    "backend": "npm --prefix backend run dev",
+    "frontend": "npm --prefix frontend run dev",
     "dev": "npm --prefix frontend run dev",
     "build": "npm --prefix frontend run build",
     "preview": "npm --prefix frontend run preview"

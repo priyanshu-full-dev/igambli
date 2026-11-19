@@ -1,8 +1,11 @@
 import React from 'react';
+import { useWhatsApp } from '../context/WhatsAppContext';
 
 export default function FloatingWhatsApp() {
+  const { getWhatsAppUrl } = useWhatsApp();
+
   const handleClick = () => {
-    window.open('https://wa.me/917366064847?text=Hello%2C%20I%20want%20to%20know%20more%20about%20iGambli%20Panel', '_blank');
+    window.open(getWhatsAppUrl('Hello, I want to know more about iGambli Panel'), '_blank');
   };
 
   return (

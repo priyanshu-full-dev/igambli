@@ -1,4 +1,5 @@
 import React from 'react';
+import { useWhatsApp } from '../context/WhatsAppContext';
 import B2CLogo from './B2CLogo';
 
 const B2C_SITES = [
@@ -35,13 +36,14 @@ const B2C_SITES = [
 ];
 
 export default function B2CSites() {
+  const { getWhatsAppUrl } = useWhatsApp();
+
   const handleVisit = (url) => {
     window.open(url, '_blank', 'noopener,noreferrer');
   };
 
   const handleWhatsapp = (domain) => {
-    const message = encodeURIComponent(`Hello, I want to get an ID / information for ${domain}`);
-    window.open(`https://wa.me/917366064847?text=${message}`, '_blank');
+    window.open(getWhatsAppUrl(`Hello, I want to get an ID / information for ${domain}`), '_blank');
   };
 
   return (

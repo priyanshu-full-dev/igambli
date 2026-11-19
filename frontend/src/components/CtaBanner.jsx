@@ -1,11 +1,14 @@
 import React from 'react';
+import { useWhatsApp } from '../context/WhatsAppContext';
 
 export default function CtaBanner({ onJoin }) {
+  const { getWhatsAppUrl } = useWhatsApp();
+
   const handleJoin = () => {
     if (onJoin) {
       onJoin();
     } else {
-      window.open('https://wa.me/917366064847?text=Hello%2C%20I%20want%20to%20join%20iGambli%20Panel%20and%20start%20my%20sports%20gaming%20brand', '_blank');
+      window.open(getWhatsAppUrl('Hello, I want to join iGambli Panel and start my sports gaming brand'), '_blank');
     }
   };
 

@@ -7,8 +7,11 @@ import BenefitsCards from '../components/BenefitsCards';
 import SocialLinks from '../components/SocialLinks';
 import CtaBanner from '../components/CtaBanner';
 import FloatingWhatsApp from '../components/FloatingWhatsApp';
+import { useWhatsApp } from '../context/WhatsAppContext';
 
 export default function LandingPage() {
+  const { getWhatsAppUrl } = useWhatsApp();
+
   const handleGetStarted = () => {
     const el = document.getElementById('b2c-sites');
     if (el) {
@@ -17,7 +20,7 @@ export default function LandingPage() {
   };
 
   const handleJoin = () => {
-    window.open('https://wa.me/917366064847?text=Hello%2C%20I%20want%20to%20join%20iGambli%20Panel%20and%20start%20my%20sports%20gaming%20brand', '_blank');
+    window.open(getWhatsAppUrl('Hello, I want to join iGambli Panel and start my sports gaming brand'), '_blank');
   };
 
   return (
