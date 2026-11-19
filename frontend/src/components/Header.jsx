@@ -3,7 +3,7 @@ import Logo from './Logo';
 
 export default function Header() {
   const handleWhatsapp = () => {
-    window.open('https://wa.me/919288684725?text=Hello%2C%20I%20want%20to%20know%20more%20about%20iGambli%20Panel', '_blank');
+    window.open('https://wa.me/917366064847?text=Hello%2C%20I%20want%20to%20know%20more%20about%20iGambli%20Panel', '_blank');
   };
 
   return (

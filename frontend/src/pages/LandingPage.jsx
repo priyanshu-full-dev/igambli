@@ -17,7 +17,7 @@ export default function LandingPage() {
   };
 
   const handleJoin = () => {
-    window.open('https://wa.me/919288684725?text=Hello%2C%20I%20want%20to%20join%20iGambli%20Panel%20and%20start%20my%20sports%20gaming%20brand', '_blank');
+    window.open('https://wa.me/917366064847?text=Hello%2C%20I%20want%20to%20join%20iGambli%20Panel%20and%20start%20my%20sports%20gaming%20brand', '_blank');
   };
 
   return (

@@ -41,7 +41,7 @@ export default function B2CSites() {
 
   const handleWhatsapp = (domain) => {
     const message = encodeURIComponent(`Hello, I want to get an ID / information for ${domain}`);
-    window.open(`https://wa.me/919288684725?text=${message}`, '_blank');
+    window.open(`https://wa.me/917366064847?text=${message}`, '_blank');
   };
 
   return (
