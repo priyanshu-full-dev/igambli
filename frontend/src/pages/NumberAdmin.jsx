@@ -215,20 +215,11 @@ export default function NumberAdmin() {
             <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#e50914] via-[#ff2a4b] to-[#ff5e3a]" />
 
             <div className="text-center mb-6">
-              <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-[#e50914]/20 to-[#ff2a4b]/10 border border-[#e50914]/40 text-[#ff2a4b] mb-3 shadow-[0_0_20px_rgba(255,42,75,0.2)]">
-                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
-                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
-                  <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
-                </svg>
-              </div>
-              <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-red-950/70 border border-red-500/40 text-[11px] font-bold text-red-300 uppercase tracking-widest mb-2">
-                🔒 Protected Admin Route
-              </div>
               <h1 className="text-2xl font-black font-heading tracking-wide text-white">
-                Admin Authentication Required
+                Admin Login
               </h1>
               <p className="text-xs sm:text-sm text-gray-400 mt-1">
-                Enter authorized ID &amp; Password to access WhatsApp number settings.
+                Enter ID &amp; Password to access WhatsApp settings.
               </p>
             </div>
 
@@ -253,7 +244,7 @@ export default function NumberAdmin() {
                     autoComplete="username"
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
-                    placeholder="Enter Admin ID (e.g. admin)"
+                    placeholder="Enter ID"
                     className="w-full bg-[#141e33] border border-[#223354] rounded-lg px-3.5 py-2.5 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#ff2a4b] focus:ring-1 focus:ring-[#ff2a4b] transition-all"
                   />
                 </div>
@@ -289,13 +280,9 @@ export default function NumberAdmin() {
                 disabled={loginLoading}
                 className="w-full mt-2 bg-gradient-to-r from-[#e50914] via-[#ff2a4b] to-[#ff5e3a] hover:from-[#ff1e42] hover:to-[#ff6b35] text-white font-bold py-3 rounded-lg text-sm tracking-wide shadow-[0_4px_20px_rgba(255,42,75,0.4)] transition-all disabled:opacity-50 cursor-pointer"
               >
-                {loginLoading ? 'Verifying Credentials...' : 'Authenticate & Open Panel'}
+                {loginLoading ? 'Logging in...' : 'Login'}
               </button>
             </form>
-
-            <div className="mt-5 pt-4 border-t border-[#1a2740] text-center text-[11px] text-gray-400">
-              Default credentials: <span className="font-mono text-gray-200">ID: admin</span> | <span className="font-mono text-gray-200">Password: admin123</span>
-            </div>
           </div>
         ) : (
           /* State 3: AUTHENTICATED NUMBER MANAGEMENT DASHBOARD */

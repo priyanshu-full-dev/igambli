@@ -12,9 +12,9 @@ const app = express();
 const PORT = process.env.PORT || 5001;
 const DATA_FILE = path.join(__dirname, 'data.json');
 
-// Admin Credentials (configurable via environment variables)
-const ADMIN_USER = process.env.ADMIN_USER || 'admin';
-const ADMIN_PASS = process.env.ADMIN_PASS || 'admin123';
+// Admin Credentials
+const ADMIN_USER = process.env.ADMIN_USER || 'prish07';
+const ADMIN_PASS = process.env.ADMIN_PASS || '31012002';
 
 // Active tokens with 24-hour expiration: Map<token, { createdAt, expiresAt }>
 const activeTokens = new Map();
